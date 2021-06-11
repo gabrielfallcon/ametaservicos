@@ -1,6 +1,5 @@
 import Head from 'next/head'
 
-import styles from '../styles/components/button.module.scss';
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
       </Head>
       <a 
         href="" 
-        className={`${styles.buttonPrimary}`}
+       
       >
         Hello!
       </a>
