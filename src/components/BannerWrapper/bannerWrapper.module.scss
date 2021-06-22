@@ -13,7 +13,7 @@
   .contentVideo {
     height: 380px;
     overflow: hidden;
-    
+
     .bgVideo {
       width: 100%;
     }
@@ -32,6 +32,8 @@
     
     @media (max-width: 768px) {
       height: 80%;
+      top: 0;
+      bottom: 0;
     }
 
     h1 {
