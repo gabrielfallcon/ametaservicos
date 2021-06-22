@@ -1,8 +1,6 @@
 import Head from 'next/head'
 
-import {
-  Main,
-} from '../styles/home';
+import styles from '../styles/home.module.scss';
 
 import { BannerWrapper, SectionOQueFazemos } from '../components';
 
@@ -14,10 +12,10 @@ export default function Home() {
         <title>Inincio | AmetaServico</title>
       </Head>
       
-      <Main>
+      <main className={styles.main}>
         <BannerWrapper />
         <SectionOQueFazemos />
-      </Main>
+      </main>
     </>
   )
 }
