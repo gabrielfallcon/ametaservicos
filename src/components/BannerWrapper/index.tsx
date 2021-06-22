@@ -1,4 +1,4 @@
-import styles from './bannerwrapper.module.scss';
+import styles from './bannerWrapper.module.scss';
 
 export function BannerWrapper() {
   return (
