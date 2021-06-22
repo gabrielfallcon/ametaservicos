@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { FiX, FiAlignJustify } from 'react-icons/fi';
 
-import {Container} from './styles';
 import styles from './header.module.scss';
 
 export function Header() {
