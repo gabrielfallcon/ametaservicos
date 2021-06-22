@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FiX, FiAlignJustify } from 'react-icons/fi';
 
 import {Container} from './styles';
+import styles from './header.module.scss';
 
 export function Header() {
   const [isActiveMenuMobile, setIsActiveMenuMobile] = useState(false);
@@ -10,15 +11,15 @@ export function Header() {
     setIsActiveMenuMobile(!isActiveMenuMobile);
   }
   return (
-    <Container>
-      <div className="show-desktop">
-        <div className="show-desktop__content-blue">
+    <header className={styles.container}>
+      <div className={styles.showDesktop}>
+        <div className={styles.showDesktopContentBlue}>
           <h2>Ameta serviços - empresa especializada em consultoria  de telecomunicações</h2>
         </div>
 
-        <div className="show-desktop__content-logo">
-          <div className="content">
-            <div className="contact">
+        <div className={styles.showDesktopContentLogo}>
+          <div className={styles.content}>
+            <div className={styles.contact}>
               <span>
               Whatsapp: <strong>11 99458-4945</strong><br />
               E-mail: <strong>contato@ametaservicos.com.br</strong>
@@ -31,8 +32,8 @@ export function Header() {
           </div>
         </div>
 
-        <nav className="show-desktop__nav">
-          <div className="nav-content">
+        <nav className={styles.showDesktopNav}>
+          <div className={styles.navContent}>
             <ul>
               <li><a href="">Inicio</a></li>
               <li><a href="">Quem Somos</a></li>
@@ -42,7 +43,7 @@ export function Header() {
             </ul>
             <a 
               href="" 
-              className="btn--primary"
+              className={styles.btnPrimary}
             >
               Iniciar Conversa
             </a>
@@ -52,8 +53,8 @@ export function Header() {
       </div>
 
 
-      <div className="show-mobile">
-        <div className="show-mobile__content">
+      <div className={styles.showMobile}>
+        <div className={styles.showMobileContent}>
           <FiAlignJustify 
             size={40}
             onClick={handleMenuMobile}
@@ -63,18 +64,18 @@ export function Header() {
         </div>
 
         <div className={`
-          show-mobile__modal
-          ${isActiveMenuMobile && 'show-mobile__modal--active'}  
+          ${styles.showMobileModal}
+          ${isActiveMenuMobile && styles.showMobileModalActive}  
         `}>
           <FiX 
             size={40}
             onClick={handleMenuMobile}
           />
 
-          <div className="modal-content">
+          <div className={styles.modalContent}>
             <img src="images/logo.png" alt="Ameta Serviços"/>
 
-            <nav className="nav-menu-mobile">
+            <nav className={styles.navMenuMobile}>
               <a href="">Inicio</a>
               <a href="">Quem Somos</a>
               <a href="">Serviços</a>
@@ -84,6 +85,6 @@ export function Header() {
           </div>
         </div>
       </div>
-    </Container>
+    </header>
   );
 }

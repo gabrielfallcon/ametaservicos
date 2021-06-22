@@ -4,7 +4,7 @@ import {
   Main,
 } from '../styles/home';
 
-import { BannerWrapper } from '../components';
+import { BannerWrapper, SectionOQueFazemos } from '../components';
 
 export default function Home() {
   
@@ -16,6 +16,7 @@ export default function Home() {
       
       <Main>
         <BannerWrapper />
+        <SectionOQueFazemos />
       </Main>
     </>
   )

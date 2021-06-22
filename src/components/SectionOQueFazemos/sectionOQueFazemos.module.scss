@@ -1,0 +1,128 @@
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    padding: 0 16px;
+    margin: 24px auto;
+  }
+
+  .contentImages {
+    flex: 1;
+    position: relative;
+    height: 370px;
+
+    @media(max-width: 768px) {
+      display: none;
+    }
+
+    img {
+      position: absolute;
+
+      &:nth-child(1) {
+        top: 0;
+        left: 0;
+      }
+      &:nth-child(2) {
+        top: 60px;
+        right: 20px;
+      }
+    }
+  }
+
+  .contentBlockText {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 487px;
+
+    .contentTitle {
+      width: 100%;
+      max-width: 487px;
+      margin-top: 48px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      width: 100%;
+      max-width: 360px;
+      font-weight: 500;
+      font-size: 29px;
+      line-height: 43px;
+      letter-spacing: 0.01em;
+      color: #7D7D7D;
+      margin-bottom: 32px;
+      
+      @media(max-width: 768px) {
+        margin-bottom: 16px;
+        max-width: 288px;
+        margin-top: 0;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    .contentImagesMobile {
+      width: 100%;
+      min-height: 45vh;
+      flex: 1;
+      position: relative;
+
+      display: none;
+
+      @media (max-width: 768px) {
+        display: block;
+      }
+
+      img {
+        position: absolute;
+
+        &:nth-child(1) {
+          width: 40vw;
+          left: 0;
+          top: 0;
+        }
+        &:nth-child(2) {
+          width: 40vw;
+          max-width: 225px;
+          top: 20%;
+          right: 5%;
+        }
+      }
+    }
+    .contentDescription {
+      margin-bottom: 40px;
+      width: 100%;
+      max-width: 487px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #191919;
+    }
+    .btnPrimary {  
+      width: 260px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      color: #1F2F84;
+      border: 1px solid #1F2F84;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      font-size: 14px;
+      transition: 0.2s;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        align-self: center;
+      }
+
+      &:hover {
+        background: #1F2F84;
+        color: #fafafa;
+      }
+    }
+  }
+}
