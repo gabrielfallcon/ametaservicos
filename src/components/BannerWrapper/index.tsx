@@ -10,8 +10,11 @@ export function BannerWrapper() {
 
         <a href="">Saiba Mais</a>
       </div>
-      <video muted loop autoPlay={true} src="videos/video-ameta.mp4"  className={styles.bgVideo}>
-      </video>
+
+      <div className={styles.contentVideo}>
+        <video muted loop autoPlay={true} src="videos/video-ameta.mp4"  className={styles.bgVideo}>
+        </video>
+      </div>
     </div>
   )
 }

@@ -2,7 +2,6 @@
   width: 100%;
   display: flex;
   height: 380px;
-  overflow: hidden;
   justify-content: center;
   flex-direction: column;
   position: relative;
@@ -11,8 +10,13 @@
     height: 300px;
   }
 
-  .bgVideo {
-    width: 100%;
+  .contentVideo {
+    height: 380px;
+    overflow: hidden;
+    
+    .bgVideo {
+      width: 100%;
+    }
   }
   .contentBanner {
     width: 100%;
