@@ -2,8 +2,9 @@ import Head from 'next/head'
 
 import {
   Main,
-  BannerWrapper
 } from '../styles/home';
+
+import { BannerWrapper } from '../components';
 
 export default function Home() {
   
@@ -14,15 +15,7 @@ export default function Home() {
       </Head>
       
       <Main>
-        <BannerWrapper>
-          <div className="content-banner">
-            <h1>
-              AMeta Serviços - atender para entender e resolver soluções complexas em projetos de telecom
-            </h1>
-
-            <a href="">Saiba Mais</a>
-          </div>
-        </BannerWrapper>
+        <BannerWrapper />
       </Main>
     </>
   )
