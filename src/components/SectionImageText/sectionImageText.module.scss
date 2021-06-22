@@ -1,0 +1,83 @@
+.bannerImageText {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  justify-content: space-between;
+  background: #1F2F84;
+
+  @media (max-width: 768px) {
+    height: 293px;
+    background: transparent;
+    background-image: url('../../../public/images/antena-section-text.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contentBlockText { 
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+      padding: 16px;
+      margin-left: 0;
+      background: rgba(31, 47, 132, .8);
+    }
+
+    .contentTitle {
+      color: #ffffff;
+      margin-bottom: 24px;
+      font-weight: 300;
+
+      strong {
+        font-weight: 700;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 36px;
+        line-height: 36px;
+      }
+    }
+    .contentDescription {
+      color: #ffffff;
+      margin-bottom: 62px;
+      
+      @media (max-width: 768px) {
+        width: 100%;
+        max-width: 280px;
+        margin-bottom: 32px;
+      }
+    }
+    .btnSecondary {
+      width: 100%;
+      max-width: 280px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+
+      @media(max-width: 768px) {
+        align-self: center;
+        max-width: 360px;
+      }
+    }
+  } 
+
+  img {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+

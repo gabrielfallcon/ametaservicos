@@ -2,7 +2,11 @@ import Head from 'next/head'
 
 import styles from '../styles/home.module.scss';
 
-import { BannerWrapper, SectionOQueFazemos } from '../components';
+import { 
+  BannerWrapper, 
+  SectionOQueFazemos,
+  SectionImageText
+} from '../components';
 
 export default function Home() {
   
@@ -15,6 +19,7 @@ export default function Home() {
       <main className={styles.main}>
         <BannerWrapper />
         <SectionOQueFazemos />
+        <SectionImageText />
       </main>
     </>
   )
