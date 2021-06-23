@@ -10,6 +10,8 @@ import {
 } from '../components';
 
 export default function Home() {
+
+  const message = "Olá, vi seus serviços através de seu site e gostaria de saber mais sobre!"
   
   return (
     <>
@@ -22,6 +24,13 @@ export default function Home() {
         <SectionOQueFazemos />
         <SectionImageText />
         <SectionParceiros />
+
+        <a 
+          href={`https://api.whatsapp.com/send?phone=5511937253930&text=${message}`} 
+          className={styles.linkWhats}
+        >
+          <img src="images/logo-whatsapp.png" alt="WhatsApp"/>
+        </a>
       </main>
     </>
   )

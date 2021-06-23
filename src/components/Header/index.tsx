@@ -6,6 +6,9 @@ import styles from './header.module.scss';
 export function Header() {
   const [isActiveMenuMobile, setIsActiveMenuMobile] = useState(false);
 
+  const message = "Olá, vi seus serviços através de seu site e gostaria de saber mais sobre!"
+
+
   const handleMenuMobile = () => {
     setIsActiveMenuMobile(!isActiveMenuMobile);
   }
@@ -41,7 +44,7 @@ export function Header() {
               <li><a href="">Contato</a></li>
             </ul>
             <a 
-              href="" 
+              href={`https://api.whatsapp.com/send?phone=5511937253930&text=${message}`} 
               className={styles.btnPrimary}
             >
               Iniciar Conversa
