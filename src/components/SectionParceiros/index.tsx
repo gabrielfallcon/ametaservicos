@@ -6,7 +6,7 @@ export function SectionParceiros() {
       <h1 className={styles.parceriasTitle}>Nossos Parceiros</h1>
 
       <p className={styles.parceriasDescription}>
-        A Ericsson é a nossa maior parceria, e através dela somos contratados para a prestação de serviços em grandes aperadoras de telecomunicação
+        A Ericsson é a nossa maior parceira, e através dela somos contratados para a prestação de serviços em grandes aperadoras de telecomunicação
       </p>
 
       <img 
