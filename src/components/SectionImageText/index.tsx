@@ -5,11 +5,11 @@ export function SectionImageText() {
     <section className={styles.bannerImageText}>
       <div className={styles.contentBlockText}  >
         <h1 className={styles.contentTitle}>
-          Ameta serviços  - Serviços de Telecomunicações
+          <strong>Ameta</strong> Serviços de Telecomunicações
         </h1>
 
         <p className={styles.contentDescription}>
-          A mais de 10 anos no mercado fazendo a diferença
+          A mais de uma década no mercado fazendo a diferença
         </p>
 
         <a 

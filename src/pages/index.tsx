@@ -5,7 +5,8 @@ import styles from '../styles/home.module.scss';
 import { 
   BannerWrapper, 
   SectionOQueFazemos,
-  SectionImageText
+  SectionImageText,
+  SectionParceiros
 } from '../components';
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <BannerWrapper />
         <SectionOQueFazemos />
         <SectionImageText />
+        <SectionParceiros />
       </main>
     </>
   )
