@@ -52,7 +52,7 @@
       font-size: 29px;
       line-height: 43px;
       letter-spacing: 0.01em;
-      color: #7D7D7D;
+      color: #239699;
       margin-bottom: 32px;
       
       @media(max-width: 768px) {
@@ -107,8 +107,8 @@
       align-items: center;
       justify-content: center;
       background: #ffffff;
-      color: #1F2F84;
-      border: 1px solid #1F2F84;
+      color: #239699;
+      border: 1px solid #239699;
       text-transform: uppercase;
       letter-spacing: 0.01em;
       font-size: 14px;
@@ -120,7 +120,7 @@
       }
 
       &:hover {
-        background: #1F2F84;
+        background: #239699;
         color: #fafafa;
       }
     }

@@ -13,15 +13,17 @@
 .showDesktopContentBlue {
   width: 100%;
   height: 40px;
-  background: #1F2F84;
+  background: #239699;
   display: flex;
   align-items: center;
   justify-content: center;
 
   h2 {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 12px;
+    letter-spacing: 0.03em;
     margin-inline: auto;
+    text-transform: uppercase;
   }
 
 }
@@ -101,7 +103,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #1F2F84;
+      background: #239699;
       color: #ffffff;
       text-transform: uppercase;
       letter-spacing: 0.01em;

@@ -3,7 +3,7 @@
   height: 320px;
   display: flex;
   justify-content: space-between;
-  background: #1F2F84;
+  background: #239699;
 
   @media (max-width: 768px) {
     height: 293px;
@@ -24,7 +24,7 @@
     @media (max-width: 768px) {
       padding: 8px;
       margin-left: 0;
-      background: rgba(31, 47, 132, .8);
+      background: rgba(35, 150, 153, 0.8);
     }
 
     .contentTitle {

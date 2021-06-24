@@ -1,0 +1,132 @@
+.sectionForm {
+  width: 100%;
+  background: #239699;
+  padding: 32px 0;
+
+  .sectionFormContent {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 24px;
+
+    @media (max-width: 768px) {
+      padding: 0 12px;
+    }
+
+    .sectionTitle {
+      color: #ffffff;
+      font-size: 29px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    .form {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .formGroup {
+        width: 100%;
+        display: flex;
+        margin-bottom: 24px;
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
+
+        input {
+          height: 50px;
+          background: #ffffff;
+          padding: 16px 12px;
+          color: #7d7d7d;
+          font-size: 16px;
+          border: 0;
+
+          &::placeholder {
+            font-size: 14px;
+            font-weight: 400;
+            color: #333333;
+            text-transform: uppercase;
+          }
+          &:focus {
+            outline: 0;
+          }
+        }
+        input[type="text"] {
+          flex: 1;
+
+          @media (max-width: 768px) {
+            margin-bottom: 24px;
+          }
+        }
+        input[type="email"] {
+          width: 40%;
+          margin-left: 24px;
+          text-transform: lowercase;
+
+          @media (max-width: 768px) {
+            width: 100%;
+            margin-left: 0;
+          }
+        }
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 280px;
+        background: #ffffff;
+        padding: 16px 12px;
+        color: #7d7d7d;
+        font-size: 16px;
+        border: 0;
+        margin-bottom: 40px;
+
+        @media (max-width: 768px) {
+          min-height: 180px;
+        }
+
+        &::placeholder {
+          font-size: 14px;
+          font-weight: 400;
+          color: #333333;
+          text-transform: uppercase;
+        }
+
+        &:focus {
+          outline: 0;
+        }
+      }
+
+      .formButton {
+        width: 100%;
+        max-width: 320px;
+        height: 45px;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #239699;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #7d7d7d;
+        letter-spacing: 0.02em;
+        transition: background .2s linear;
+
+        @media (min-width: 1120px) {
+          &:hover {
+            background: #239699;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
