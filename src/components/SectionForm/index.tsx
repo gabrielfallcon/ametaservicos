@@ -5,7 +5,7 @@ import { Modal } from '../Modal';
 
 import styles from './sectionForm.module.scss';
 
-export function SectionForm() {
+const ReactForm: React.FC = () =>{
   const [modalActive, setModalActive] = useState(false);
 
   const [status, setStatus] = useState('Enviar')
@@ -20,7 +20,7 @@ export function SectionForm() {
     setStatus('Enviando...')
 
     emailjs.sendForm('ametaservicosemail', 'template_4z0fjy6', e.target ,  'user_exfms2yzMGbHVlaT3IzNb')
-      .then((res) => {
+      .then(() => {
         setModalActive(true)
 
         setStatus('Enviar')
@@ -29,7 +29,7 @@ export function SectionForm() {
         setEmail('')
         setMessage('')
       }, (error) => (
-        console.log(error)
+        alert(error.text)
       ));
   }
 
@@ -89,3 +89,5 @@ export function SectionForm() {
     </>
   )
 }
+
+export default ReactForm

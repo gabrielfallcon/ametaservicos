@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import dynamic from 'next/dynamic';
+
 import styles from '../styles/home.module.scss';
 
 import { 
@@ -7,10 +9,15 @@ import {
   SectionOQueFazemos,
   SectionImageText,
   SectionParceiros,
-  SectionForm,
 } from '../components';
+import React, { Component } from 'react';
+
 
 export default function Home() {
+
+  const AsyncComponent = dynamic(() => import('../components/SectionForm'), {
+    ssr: false
+  });
 
   const message = "Olá, vi seus serviços através de seu site e gostaria de saber mais sobre!"
   
@@ -25,7 +32,7 @@ export default function Home() {
         <SectionOQueFazemos />
         <SectionImageText />
         <SectionParceiros />
-        <SectionForm />
+        <AsyncComponent />
 
         <a 
           href={`https://api.whatsapp.com/send?phone=5511937253930&text=${message}`} 
