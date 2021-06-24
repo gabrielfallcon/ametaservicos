@@ -6,7 +6,8 @@ import {
   BannerWrapper, 
   SectionOQueFazemos,
   SectionImageText,
-  SectionParceiros
+  SectionParceiros,
+  SectionQualidade
 } from '../components';
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
         <SectionOQueFazemos />
         <SectionImageText />
         <SectionParceiros />
+        <SectionQualidade />
 
         <a 
           href={`https://api.whatsapp.com/send?phone=5511937253930&text=${message}`} 
