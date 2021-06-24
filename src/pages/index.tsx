@@ -7,9 +7,7 @@ import {
   SectionOQueFazemos,
   SectionImageText,
   SectionParceiros,
-  SectionQualidade,
   SectionForm,
-  Modal
 } from '../components';
 
 export default function Home() {
@@ -28,8 +26,6 @@ export default function Home() {
         <SectionImageText />
         <SectionParceiros />
         <SectionForm />
-
-        <Modal />
 
         <a 
           href={`https://api.whatsapp.com/send?phone=5511937253930&text=${message}`} 
