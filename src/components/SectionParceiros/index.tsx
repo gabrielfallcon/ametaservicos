@@ -2,7 +2,7 @@ import styles from './sectionParceiros.module.scss';
 
 export function SectionParceiros() {
   return (
-    <section className={styles.parcerias}>
+    <section id="servicos" className={styles.parcerias}>
       <h1 className={styles.parceriasTitle}>Nossos Parceiros</h1>
 
       <p className={styles.parceriasDescription}>

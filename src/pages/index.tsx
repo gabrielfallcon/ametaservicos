@@ -10,7 +10,6 @@ import {
   SectionImageText,
   SectionParceiros,
 } from '../components';
-import React, { Component } from 'react';
 
 
 export default function Home() {
@@ -18,8 +17,6 @@ export default function Home() {
   const AsyncComponent = dynamic(() => import('../components/SectionForm'), {
     ssr: false
   });
-
-  const message = "Olá, vi seus serviços através de seu site e gostaria de saber mais sobre!"
   
   return (
     <>
@@ -33,13 +30,6 @@ export default function Home() {
         <SectionImageText />
         <SectionParceiros />
         <AsyncComponent />
-
-        <a 
-          href={`https://api.whatsapp.com/send?phone=5511937253930&text=${message}`} 
-          className={styles.linkWhats}
-        >
-          <img src="images/logo-whatsapp.png" alt="WhatsApp"/>
-        </a>
       </main>
     </>
   )

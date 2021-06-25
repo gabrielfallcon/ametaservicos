@@ -43,7 +43,7 @@ const ReactForm: React.FC = () =>{
       />
       
 
-      <section className={styles.sectionForm}>
+      <section id="contactForm" className={styles.sectionForm}>
         <div className={styles.sectionFormContent}>
           <h2 className={styles.sectionTitle}>
             Fale Conosco

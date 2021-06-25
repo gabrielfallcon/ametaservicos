@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FiX, FiAlignJustify } from 'react-icons/fi';
+import Link from 'next/link';
 
 import styles from './header.module.scss';
 
@@ -28,7 +29,9 @@ export function Header() {
               </span>
             </div>
 
-            <img src="images/logo.png" alt="Ameta Serviços"/>
+            <Link href="/">
+              <img src="images/logo.png" alt="Ameta Serviços"/>
+            </Link>
 
             <p>Olá, seja bem-vindo! </p>
           </div>
@@ -37,11 +40,25 @@ export function Header() {
         <nav className={styles.showDesktopNav}>
           <div className={styles.navContent}>
             <ul>
-              <li><a href="">Inicio</a></li>
-              <li><a href="">Quem Somos</a></li>
-              <li><a href="">Serviços</a></li>
-              <li><a href="">Portfólio</a></li>
-              <li><a href="">Contato</a></li>
+              <li>
+                <Link href="/">
+                  <a>Inicio</a>
+                </Link>
+              </li>
+              <li>
+                <a href="">Quem Somos</a>
+              </li>
+              <li>
+                <a href="#servicos">Serviços</a>
+              </li>
+              <li>
+                <a href="">Portfólio</a>
+              </li>
+              <li>
+                <Link href="/contact">
+                  <a href="">Contato</a>
+                </Link>
+              </li>
             </ul>
             <a 
               href={`https://api.whatsapp.com/send?phone=5511937253930&text=${message}`} 
@@ -62,7 +79,9 @@ export function Header() {
             onClick={handleMenuMobile}
           />
 
-          <img src="images/logo.png" alt="Ameta Serviços"/>
+          <Link href="/">
+            <img src="images/logo.png" alt="Ameta Serviços"/>
+          </Link>
         </div>
 
         <div className={`
@@ -78,11 +97,25 @@ export function Header() {
             <img src="images/logo.png" alt="Ameta Serviços"/>
 
             <nav className={styles.navMenuMobile}>
-              <a href="">Inicio</a>
-              <a href="">Quem Somos</a>
-              <a href="">Serviços</a>
-              <a href="">Portfólio</a>
-              <a href="">Contato</a>
+              <Link href="/">
+                <a onClick={handleMenuMobile}>
+                  Inicio
+                </a>
+              </Link>
+              <a href="" onClick={handleMenuMobile}>
+                Quem Somos
+              </a>
+              <a href="" onClick={handleMenuMobile}>
+                Serviços
+              </a>
+              <a href="" onClick={handleMenuMobile}>
+                Portfólio
+              </a>
+              <Link href="/contact">
+                <a onClick={handleMenuMobile}>
+                  Contato
+                </a>
+              </Link>
             </nav>
           </div>
         </div>

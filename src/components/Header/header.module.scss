@@ -48,20 +48,23 @@
       left: 0;
 
       span {
+        font-size: 14px;
         strong {
-          color: #1F2F84;
+          color: #239699;
         }
       }
     }
 
     & > img {
       width: 100px;
+      cursor: pointer;
     } 
 
     & > p {
+      font-size: 14px;
       position: absolute;
       right: 0;
-      font-weight: 600;
+      font-weight: 700;
     }
   }
 }
@@ -88,11 +91,21 @@
 
       li {
         a {
-          color: #1F2F84;
+          width: fit-content;
+          height: 40px;
+          padding: 8px;
+          background: transparent;
+          color: #239699;
           font-weight: 700;
           text-decoration: none;
-          font-size: 16px;
+          font-size: 14px;
           text-transform: uppercase;
+          transition: .2s linear;
+          border: 1px solid transparent;
+
+          &:hover {
+            border: 1px solid #239699;
+          }
         }
       }
     }
@@ -138,7 +151,7 @@
   }
 
   & > img {
-    width: 60px;
+    width: 80px;
   }
 }
 

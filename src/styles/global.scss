@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body, input, textarea, select, button {
@@ -16,4 +17,23 @@ button {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.linkWhats {
+  text-decoration: none;
+  color: inherit;
+  position: fixed;
+  bottom: 30px;
+  right: 22px;
+  z-index: 999;
+
+  @media (max-width: 768px) {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 50px;
+  }
 }
