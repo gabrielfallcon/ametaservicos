@@ -49,7 +49,9 @@ export function Header() {
                 <a href="">Quem Somos</a>
               </li>
               <li>
-                <a href="#servicos">Serviços</a>
+                <Link href="/services">
+                  <a>Serviços</a>
+                </Link>
               </li>
               <li>
                 <a href="">Portfólio</a>
@@ -105,9 +107,11 @@ export function Header() {
               <a href="" onClick={handleMenuMobile}>
                 Quem Somos
               </a>
-              <a href="" onClick={handleMenuMobile}>
-                Serviços
-              </a>
+              <Link href="/services">
+                <a onClick={handleMenuMobile}>
+                  Serviços
+                </a>
+              </Link>
               <a href="" onClick={handleMenuMobile}>
                 Portfólio
               </a>
