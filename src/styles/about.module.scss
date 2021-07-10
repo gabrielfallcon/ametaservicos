@@ -1,0 +1,328 @@
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.bannerAbout {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url('../../public/images/banner-sobre-nos.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 80px;
+
+  @media (max-width: 768px) {
+    justify-self: start;
+    margin-bottom: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(31, 47, 132, 0.9);
+    opacity: .8;
+  }
+
+  .bannerAboutBlock {
+    width: 100%;
+    max-width: 630px;
+    padding: 32px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #ffffff;
+    z-index: 50;
+    transform: translateY(30%);
+
+    @media (max-width: 768px) {
+      height: 100%;
+      transform: none;
+      background: transparent;
+    }
+
+    p {
+      color: #1F2F84;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 24px;
+      text-align: center;
+      letter-spacing: 0.01em;
+
+      @media (max-width: 768px) {
+        color: #ffffff;
+      }
+    }
+    h1 {
+      color: #1F2F84;
+      font-size: 36px;
+      line-height: 43px;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+
+      @media (max-width: 768px) {
+        color: #ffffff;
+      }
+    }
+  }
+}
+.sectionQuemSomos {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 80px;
+
+  @media (max-width: 768px) {
+    padding: 8px;
+    margin-bottom: 40px;
+  }
+
+  h1.sectionQuemSomosTitle {
+    font-size: 29px;
+    line-height: 120%;
+    color: #1F2F84;
+    margin-bottom: 16px;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+  .sectionQuemSomosBlockImages {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 32px;
+    margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      width: 100%;
+      max-width: 150px;
+
+      @media (max-width: 768px) {
+        max-width: 200px;
+        text-align: center;
+      }
+    }
+  }
+  p.sectionQuemSomosDescription {
+    font-size: 16px;
+    line-height: 120%;
+    color: #7d7d7d;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+}
+.sectionMissao {
+  width: 95%;
+  height: 450px;
+  position: relative;
+  margin-bottom: 80px;
+  
+  @media (max-width: 768px) {
+    min-height: 750px;
+  }
+  
+  .sectionMissaoContent {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    background: rgba(31, 47, 132, .9);
+    z-index: 10;
+
+    h1.sectionMissaoTitle {
+      font-size: 36px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 40px;
+      color: #ffffff;
+  
+      @media (max-width: 768px) {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 16px;
+      }
+    }
+    h3.sectionMissaoSubTitle {
+      width: 100%;
+      max-width: 1000px;
+      font-size: 16px;
+      line-height: 150%;
+      color: #ffffff;
+      font-weight: 500;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      margin-bottom: 60px;
+  
+      @media (max-width: 768px) {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+    ul.sectionMissaoList {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      list-style: none;
+  
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+  
+      li.sectionMissaoListItem {
+        width: 100%;
+        max-width: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 16px;
+  
+        &:nth-child(2) {
+          border-left: 1px solid #ffffff;
+          border-right: 1px solid #ffffff;
+  
+          @media (max-width: 768px) {
+            padding: 16px;
+            border-left: 0;
+            border-right: 0;
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+          }
+        }
+  
+        h1 {
+          font-size: 36px;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 0.02em;
+          margin-bottom: 16px;
+          color: #ffd203;
+        }
+        h2 {
+          font-size: 20px;
+          line-height: 120%;
+          text-transform: uppercase;
+          letter-spacing: 0.01em;
+          color: #ffffff;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .contentVideo {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    .bgVideo {
+      width: 100%;
+    }
+  }
+}
+.sectionParcerias {
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background: #efefef;
+  padding: 32px;
+  margin-bottom: 80px;
+
+  h1.sectionParceriasTitle {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #1F2F84;
+    margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  .sectionParceriasBlockTextImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+    }
+    p.sectionParceriasBlockDescription {
+      width: 100%;
+      max-width: 480px;
+      font-size: 32px;
+      font-style: italic;
+      text-align: right;
+      font-weight: 700;
+      line-height: 130%;
+      color: #1F2F84;
+      position: relative;
+
+      @media (max-width: 768px) {
+        font-size: 29px;
+      }
+
+      &::before {
+        content: "=";
+        position: absolute;
+        top: 40%;
+        left: -64px;
+        font-size: 58px;
+
+        @media (max-width: 768px) {
+          top: 110%;
+          left: 50%;
+          transform: translateX(-50%);
+          transform: rotateZ(90deg);
+        }
+      }
+    }
+  }
+}
