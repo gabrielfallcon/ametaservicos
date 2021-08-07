@@ -1,6 +1,8 @@
 import styles from './sectionImageText.module.scss';
 
 export function SectionImageText() {
+  const message = "Olá, vi seus serviços através de seu site e gostaria de saber mais sobre!"
+
   return (
     <section className={styles.bannerImageText}>
       <div className={styles.contentBlockText}  >
@@ -12,9 +14,10 @@ export function SectionImageText() {
           A mais de uma década no mercado fazendo a diferença
         </p>
 
-        <a 
-          href="#"
-          className={styles.btnSecondary}  
+        <a
+          href={`https://api.whatsapp.com/send?phone=5511937253930&text=${message}`}
+          target="_blank" 
+          className={styles.btnSecondary}
         >
           Entrar em Contato
         </a>

@@ -11,7 +11,7 @@ export function Footer() {
         />
 
         <p className={styles.footerDescription}>
-          11  99999-9999 | www.ametaservicos.com | contato@ametaservicos.com.br <br/>
+          11  93725-3930 | www.ametaservicos.com | contato@ametaservicos.com.br <br/>
           Todos os direitos reservados.
         </p>
 

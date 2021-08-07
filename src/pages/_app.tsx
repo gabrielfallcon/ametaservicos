@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <a 
         href={`https://api.whatsapp.com/send?phone=5511937253930&text=${message}`} 
+        target="_blank"
         className="linkWhats"
       >
         <img src="images/logo-whatsapp.png" alt="WhatsApp"/>

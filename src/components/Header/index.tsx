@@ -24,7 +24,7 @@ export function Header() {
           <div className={styles.content}>
             <div className={styles.contact}>
               <span>
-              Whatsapp: <strong>11 99458-4945</strong><br />
+              Whatsapp: <strong>11 93725-3930</strong><br />
               E-mail: <strong>contato@ametaservicos.com.br</strong>
               </span>
             </div>
@@ -66,6 +66,7 @@ export function Header() {
             </ul>
             <a 
               href={`https://api.whatsapp.com/send?phone=5511937253930&text=${message}`} 
+              target="_blank"
               className={styles.btnPrimary}
             >
               Iniciar Conversa

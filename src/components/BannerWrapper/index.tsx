@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './bannerWrapper.module.scss';
 
 export function BannerWrapper() {
@@ -8,7 +9,11 @@ export function BannerWrapper() {
           AMeta Serviços - atender para entender e resolver soluções complexas em projetos de telecom
         </h1>
 
-        <a href="">Saiba Mais</a>
+        <Link href="/services">
+          <a>
+            Saiba Mais
+          </a>
+        </Link>
       </div>
 
       <div className={styles.contentVideo}>

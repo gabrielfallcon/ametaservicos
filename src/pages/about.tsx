@@ -13,10 +13,8 @@ export default function Services() {
         <section className={styles.bannerAbout}>
           <div className={styles.bannerAboutBlock}>
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse 
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-              anim id est laborum.
+              Estamos aqui para fazer a diferença nos serviços em que 
+              realizamos, se não, porque estar aqui?
             </p>
 
             <h1>Sobre Nós</h1>
@@ -28,14 +26,18 @@ export default function Services() {
             AMeta Serviços
           </h1> 
 
-          <div className={styles.sectionQuemSomosBlockImages}>
-            <img src="images/antena.jpg" alt="Antena"/>
-            <img src="images/logo.png" alt="Ameta Serviços"/>
-            <img src="images/antena-section-text.png" alt=""/>
-          </div>
-
           <p className={styles.sectionQuemSomosDescription}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis deleniti non possimus neque, dolorem eaque amet nostrum tenetur debitis illum dolores nulla accusamus aut facere at, recusandae nisi dignissimos facilis. <br /> 
+            Nos dedicamos para entregar um serviços com alto valor e sua felicidade 
+            é oque nos motiva em ser referência no mercado! <br /> <br/> 
+
+            <h3>Por que confiar na AMeta Serviços? </h3><br/>
+
+            <span>
+              - Entregas com qualidade; <br/>
+              - Agilidade nos processos; <br/>
+              - Ótima base de relaçionamento com clientes; <br/>
+              - Zelo por entregas e prazo; 
+            </span>
           </p>
         </section>
 
