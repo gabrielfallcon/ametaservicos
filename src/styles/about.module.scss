@@ -313,21 +313,6 @@
       @media (max-width: 768px) {
         font-size: 29px;
       }
-
-      &::before {
-        content: "=";
-        position: absolute;
-        top: 40%;
-        left: -64px;
-        font-size: 58px;
-
-        @media (max-width: 768px) {
-          top: 110%;
-          left: 50%;
-          transform: translateX(-50%);
-          transform: rotateZ(90deg);
-        }
-      }
     }
   }
 }

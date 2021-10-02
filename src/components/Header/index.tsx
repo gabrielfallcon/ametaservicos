@@ -56,9 +56,6 @@ export function Header() {
                 </Link>
               </li>
               <li>
-                <a href="">Portfólio</a>
-              </li>
-              <li>
                 <Link href="/contact">
                   <a href="">Contato</a>
                 </Link>
@@ -117,9 +114,6 @@ export function Header() {
                   Serviços
                 </a>
               </Link>
-              <a href="" onClick={handleMenuMobile}>
-                Portfólio
-              </a>
               <Link href="/contact">
                 <a onClick={handleMenuMobile}>
                   Contato

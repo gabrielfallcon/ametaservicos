@@ -9,3 +9,4 @@ export { SectionQualidade } from './SectionQualidade';
 export { Modal } from './Modal';
 export { default as TabPanel, Tab } from './TabPanel';
 export { Footer } from './Footer';
+export { ContentBox }  from './ContentBox';

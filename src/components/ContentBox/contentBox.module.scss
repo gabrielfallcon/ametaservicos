@@ -1,0 +1,36 @@
+.contentContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 24px auto;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #239699;
+  transition: .4s;
+
+  &[direction="right"] {
+    @media (min-width: 1000px) {
+      transform: translateX(30px);
+    }
+  }
+
+  @media (min-width: 1100px) {
+    transform: translateX(-30px);
+
+    &:hover {
+      transform: translateX(0);
+    }
+  }
+
+  .contentBoxTitle {
+    font-size: 26px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 40px;
+    color: #239699;
+  }
+  .contentText {
+    width: 100%;
+  }
+}
