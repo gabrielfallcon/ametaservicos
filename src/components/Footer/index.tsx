@@ -15,11 +15,7 @@ export function Footer() {
           Todos os direitos reservados.
         </p>
 
-        <img 
-          src="images/ericsson-logo.png" 
-          alt="Logo Ericsson"
-          className={styles.footerImageEricsson}  
-        />
+        
       </div>
     </footer>
   );

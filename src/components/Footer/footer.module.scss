@@ -9,14 +9,14 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    position: relative;
 
     @media(max-width: 768px) {
-      flex-direction: column;
       height: 180px;
       padding: 20px 0;
-      position: relative;
-
+      align-items: flex-end;      
+        
       &::before {
         content: "";
         width: 100%;
@@ -30,6 +30,15 @@
     .footerImageAmeta {
       width: 100%;
       max-width: 60px;
+      position: absolute;
+      left: 0;
+      margin: auto 0;
+
+      @media (max-width: 768px) {
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
     .footerDescription {
       width: 100%;
@@ -44,14 +53,6 @@
         color: #1f2f84;
         line-height: 14px;
         font-size: 12px;
-      }
-    }
-    .footerImageEricsson {
-      width: 100%;
-      max-width: 100px;
-
-      @media(max-width: 768px) {
-        display: none;
       }
     }
   }
