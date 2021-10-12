@@ -35,7 +35,7 @@ export default function Services() {
             <span>
               - Entregas com qualidade; <br/>
               - Agilidade nos processos; <br/>
-              - Ótima base de relaçionamento com clientes; <br/>
+              - Ótima base de relacionamento com clientes; <br/>
               - Zelo por entregas e prazo; 
             </span>
           </p>
@@ -74,7 +74,7 @@ export default function Services() {
                 <h1>Valores</h1>
 
                 <h2>
-                  Agilidade, Qualidade, Responsabilidade e Zelo
+                  Agilidade, Qualidade, Responsabilidade e Zelo pelos colabodares.
                 </h2>
               </li>
             </ul>

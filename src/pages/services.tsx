@@ -34,7 +34,6 @@ export default function Services() {
               - Projeto Definitivo de Instalação (PDI) <br />
               - Elaboração de War Room (Site Solution) <br />
               - Solicitação de Compartilhamento <br />
-              - Laudo Radiométrico 
             </p>
           </ContentBox>
 

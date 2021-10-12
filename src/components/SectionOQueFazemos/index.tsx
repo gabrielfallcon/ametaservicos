@@ -20,7 +20,7 @@ export function SectionOQueFazemos() {
         </div>
 
         <p className={styles.contentDescription}>
-          Somos uma empresa focada em prestação de serviço e consultoria em telecomunicações.Realizando os seguintes serviços: <strong>RF, TX, PPI, PDI, Site Solution, Laudo Radiométrico, Site Survey, </strong> <br/><br/>
+          Somos uma empresa focada em prestação de serviço e consultoria em telecomunicações.Realizando os seguintes serviços: <strong>RF, TX, PPI, PDI, Site Solution, Site Survey, </strong> <br/><br/>
 
           Com nossa equipe garantimos qualidade nos serviços, <strong>prezamos muito pelo relacionamento com o cliente e isso nos torna diferentes,</strong> não se trata apenas de uma prestação de serviço, construimos tudo na base da confiança proporcionando uma experiência incrivel! 
         </p>
