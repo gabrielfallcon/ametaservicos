@@ -1,0 +1,82 @@
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.bannerAbout {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url('../../public/images/banner-sobre-nos.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 80px;
+
+  @media (max-width: 768px) {
+    justify-self: start;
+    margin-bottom: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(31, 47, 132, 0.9);
+    opacity: .8;
+  }
+
+  .bannerAboutBlock {
+    width: 100%;
+    max-width: 630px;
+    padding: 32px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #ffffff;
+    z-index: 50;
+    transform: translateY(30%);
+
+    @media (max-width: 768px) {
+      height: 100%;
+      transform: none;
+      background: transparent;
+    }
+
+    p {
+      color: #1F2F84;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 24px;
+      text-align: center;
+      letter-spacing: 0.01em;
+
+      @media (max-width: 768px) {
+        color: #ffffff;
+      }
+    }
+    h1 {
+      color: #1F2F84;
+      font-size: 36px;
+      line-height: 43px;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        color: #ffffff;
+      }
+    }
+  }
+}

@@ -12,6 +12,9 @@ export default class MyDocument extends Document {
           <meta property="og:title"              content="Ameta Serviços" />
           <meta property="og:description"        content="Está procurando serviços de qualidade em telecomunicação?" />
           <meta property="og:image"              content="images/logo.png" />
+
+          <meta name="title" content="Ameta Serviços"/>
+          <meta name="description" content="Está procurando serviços de qualidade em telecomunicação?"/>
         </Head>
         <body>
           <Main />

@@ -23,7 +23,7 @@ export default function Services() {
         
         <section className={styles.sectionQuemSomos}>
           <h1 className={styles.sectionQuemSomosTitle}>
-            AMeta Serviços
+            Ameta Serviços
           </h1> 
 
           <p className={styles.sectionQuemSomosDescription}>
@@ -48,7 +48,7 @@ export default function Services() {
             </h1>
 
             <h3 className={styles.sectionMissaoSubTitle}>
-              A AMeta Serviços é guiada pela inovação e tecnologia, por isso é referência em 
+              A Ameta Serviços é guiada pela inovação e tecnologia, por isso é referência em 
               serviços de qualidade, a empresa tem mais de 1 década e já é reconhecida pelos 
               seus clientes como empresa de serviços de ótima qualidade.
             </h3>
@@ -95,7 +95,7 @@ export default function Services() {
             <img src="images/logo-parcerias.png" alt="Ericsson"/>
 
             <p className={styles.sectionParceriasBlockDescription}>
-              A Ercsson hoje é a nossa maior cliente e que acredita em nosso 
+              A Ericsson hoje é a nossa maior cliente e que acredita em nosso 
               trabalho com qualidade. Através dela prestamos serviços para as 
               maiores redes de telecomunicações do Brasil!
             </p>
