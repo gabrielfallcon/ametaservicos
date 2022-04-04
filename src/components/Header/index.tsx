@@ -65,6 +65,11 @@ export function Header() {
                   <a>Trabalhe Conosco</a>
                 </Link>
               </li>
+              <li>
+                <Link href="/jobs">
+                  <a>Vagas</a>
+                </Link>
+              </li>
             </ul>
             <a 
               href={`https://api.whatsapp.com/send?phone=5511937253930&text=${message}`} 
@@ -129,7 +134,11 @@ export function Header() {
                   Trabalhe Conosco
                 </a>
               </Link>
-            
+              <Link href="/jobs">
+                <a onClick={handleMenuMobile}>
+                  Vagas
+                </a>
+              </Link>
             </nav>
           </div>
         </div>
