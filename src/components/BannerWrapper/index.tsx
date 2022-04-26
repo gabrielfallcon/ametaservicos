@@ -6,7 +6,7 @@ export function BannerWrapper() {
     <div className={styles.container}>
       <div className={styles.contentBanner}>
         <h1>
-          AMeta Serviços - atender para entender e resolver soluções complexas em projetos de telecom
+          Ameta Serviços - atender para entender e resolver soluções complexas em projetos de telecom
         </h1>
 
         <Link href="/services">
