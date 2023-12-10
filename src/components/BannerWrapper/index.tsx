@@ -10,9 +10,9 @@ export function BannerWrapper() {
         </h1>
 
         <Link href="/services">
-          <a>
+       
             Saiba Mais
-          </a>
+         
         </Link>
       </div>
 
