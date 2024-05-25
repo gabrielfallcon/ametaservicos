@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 import { Modal } from '../Modal';
 
@@ -19,7 +19,9 @@ const ReactForm: React.FC = () =>{
 
     setStatus('Enviando...')
 
-    emailjs.sendForm('ametaservicosemail', 'template_4z0fjy6', e.target ,  'user_exfms2yzMGbHVlaT3IzNb')
+    emailjs.sendForm('service_mg5vqbd', 'template_fg2j0ej', e.target, {
+      publicKey: 'krqFkdn_z8wO7MkIx'
+    })
       .then(() => {
         setModalActive(true)
 
