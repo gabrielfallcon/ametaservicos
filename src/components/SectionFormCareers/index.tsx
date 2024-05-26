@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 import { Modal } from '../Modal';
 
@@ -13,7 +13,6 @@ const ReactFormCareers: React.FC = () =>{
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [cell, setCell] = useState('');
-  const [cv, setCv] = useState('');
   const [message, setMessage] = useState('');
 
   const sendMail = (e) => {
@@ -21,7 +20,9 @@ const ReactFormCareers: React.FC = () =>{
 
     setStatus('Enviando...')
 
-    emailjs.sendForm('ametaServicoCarreiras', 'template_d2h902m', e.target ,  'user_exfms2yzMGbHVlaT3IzNb')
+    emailjs.sendForm('service_mg5vqbd', 'template_yj8x4ly', e.target , {
+      publicKey: 'krqFkdn_z8wO7MkIx'
+    })
       .then(() => {
         setModalActive(true)
 
@@ -29,6 +30,7 @@ const ReactFormCareers: React.FC = () =>{
 
         setName('')
         setEmail('')
+        setCell('')
         setMessage('')
       }, (error) => (
         alert(error.text)
