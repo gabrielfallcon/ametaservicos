@@ -15,7 +15,7 @@ export const dataJobs = [
         description: ' Conhecimento em equipamentos de telecomunicações.',
         requirements: 'Para esta vaga é desejável que o candidato tenha experiência em campo. Daremos treinamento se necessário.',
         local: 'Sao paulo - SP',
-        typeHiring: 'CLT'
+        typeHiring: 'PJ ou CLT'
     },
     
 ]
