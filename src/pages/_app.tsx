@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Footer />
 
       <a 
-        href={`https://api.whatsapp.com/send?phone=5511937253930&text=${message}`} 
+        href={`https://api.whatsapp.com/send?phone=5511969160571&text=${message}`} 
         target="_blank"
         className="linkWhats"
       >

@@ -33,7 +33,7 @@ export default function Contact() {
 
               <h3>Telefone para contato</h3>
 
-              <p>11 93725-3930</p>
+              <p>11 96916-0571</p>
             </div>
 
             <div className={styles.box}>
